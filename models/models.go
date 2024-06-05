@@ -32,19 +32,19 @@ type Product struct {
 }
 
 type ProductUser struct {
-	Product_ID   primitive.ObjectID `bson:"_id"`
-	Product_Name *string            `bson:"product_name bson:"product_name"`
-	Price        int                `bson:"price bson:"price"`
-	Rating       *uint8             `bson:"rating bson:"rating"`
-	Image        *string            `bson:"image bson:"image"`
+	Product_ID   primitive.ObjectID `json:"_id" bson:"_id"`
+	Product_Name *string            `bson:"product_name"`
+	Price        int                `bson:"price"`
+	Rating       *uint8             `bson:"rating"`
+	Image        *string            `bson:"image"`
 }
 
 type Address struct {
-	Address_ID primitive.ObjectID `bson:"_id bson:"_id"`
-	House      *string            `bson:"house bson:"house"`
-	Street     *string            `bson:"street bson:"street"`
-	City       *string            `bson:"city bson:"city"`
-	Pincode    *string            `bson:"pincode bson:"pincode"`
+	Address_ID primitive.ObjectID `json:"_id" bson:"_id"`
+	House      *string            `bson:"house"`
+	Street     *string            `bson:"treet"`
+	City       *string            `bson:"city"`
+	Pincode    *string            `bson:"pincode"`
 }
 
 type Order struct {
